@@ -1,0 +1,80 @@
+[2018-07-22 14:37:09,445][main][INFO][com.example.spring06.Spring06Application:50] Starting Spring06Application on yjk-GL72M-7REX with PID 4374 (started by yjk in /home/yjk/桌面/project/spring06)
+[2018-07-22 14:37:09,448][main][DEBUG][com.example.spring06.Spring06Application:53] Running with Spring Boot v2.0.3.RELEASE, Spring v5.0.7.RELEASE
+[2018-07-22 14:37:09,448][main][INFO][com.example.spring06.Spring06Application:663] The following profiles are active: dev
+[2018-07-22 14:37:09,514][main][INFO][org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext:590] Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@3098cf3b: startup date [Sun Jul 22 14:37:09 CST 2018]; root of context hierarchy
+[2018-07-22 14:37:10,166][main][INFO][org.springframework.boot.web.embedded.tomcat.TomcatWebServer:91] Tomcat initialized with port(s): 8080 (http)
+[2018-07-22 14:37:10,178][main][INFO][org.apache.coyote.http11.Http11NioProtocol:180] Initializing ProtocolHandler ["http-nio-8080"]
+[2018-07-22 14:37:10,183][main][INFO][org.apache.catalina.core.StandardService:180] Starting service [Tomcat]
+[2018-07-22 14:37:10,183][main][INFO][org.apache.catalina.core.StandardEngine:180] Starting Servlet Engine: Apache Tomcat/8.5.31
+[2018-07-22 14:37:10,187][localhost-startStop-1][INFO][org.apache.catalina.core.AprLifecycleListener:180] The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [/usr/java/packages/lib/amd64:/usr/lib64:/lib64:/lib:/usr/lib]
+[2018-07-22 14:37:10,230][localhost-startStop-1][INFO][org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/]:180] Initializing Spring embedded WebApplicationContext
+[2018-07-22 14:37:10,230][localhost-startStop-1][INFO][org.springframework.web.context.ContextLoader:285] Root WebApplicationContext: initialization completed in 718 ms
+[2018-07-22 14:37:10,317][localhost-startStop-1][INFO][org.springframework.boot.web.servlet.ServletRegistrationBean:186] Servlet dispatcherServlet mapped to [/]
+[2018-07-22 14:37:10,320][localhost-startStop-1][INFO][org.springframework.boot.web.servlet.FilterRegistrationBean:245] Mapping filter: 'characterEncodingFilter' to: [/*]
+[2018-07-22 14:37:10,320][localhost-startStop-1][INFO][org.springframework.boot.web.servlet.FilterRegistrationBean:245] Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+[2018-07-22 14:37:10,320][localhost-startStop-1][INFO][org.springframework.boot.web.servlet.FilterRegistrationBean:245] Mapping filter: 'httpPutFormContentFilter' to: [/*]
+[2018-07-22 14:37:10,320][localhost-startStop-1][INFO][org.springframework.boot.web.servlet.FilterRegistrationBean:245] Mapping filter: 'requestContextFilter' to: [/*]
+[2018-07-22 14:37:10,423][main][INFO][org.springframework.web.servlet.handler.SimpleUrlHandlerMapping:373] Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+[2018-07-22 14:37:10,586][main][INFO][org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter:574] Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@3098cf3b: startup date [Sun Jul 22 14:37:09 CST 2018]; root of context hierarchy
+[2018-07-22 14:37:10,620][main][INFO][org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping:547] Mapped "{[/hello],methods=[GET]}" onto public java.lang.String com.example.spring06.web.HelloController.hello(java.lang.String)
+[2018-07-22 14:37:10,623][main][INFO][org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping:547] Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+[2018-07-22 14:37:10,623][main][INFO][org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping:547] Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+[2018-07-22 14:37:10,649][main][INFO][org.springframework.web.servlet.handler.SimpleUrlHandlerMapping:373] Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+[2018-07-22 14:37:10,649][main][INFO][org.springframework.web.servlet.handler.SimpleUrlHandlerMapping:373] Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+[2018-07-22 14:37:10,825][main][WARN][org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext:558] Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'mongo' defined in class path resource [org/springframework/boot/autoconfigure/mongo/MongoAutoConfiguration.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [com.mongodb.MongoClient]: Factory method 'mongo' threw exception; nested exception is java.lang.IllegalArgumentException: clusterListener can not be null
+[2018-07-22 14:37:10,826][main][INFO][org.springframework.jmx.export.annotation.AnnotationMBeanExporter:451] Unregistering JMX-exposed beans on shutdown
+[2018-07-22 14:37:10,828][main][INFO][org.apache.catalina.core.StandardService:180] Stopping service [Tomcat]
+[2018-07-22 14:37:10,836][main][INFO][org.springframework.boot.autoconfigure.logging.ConditionEvaluationReportLoggingListener:101] 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+[2018-07-22 14:37:10,838][main][ERROR][org.springframework.boot.SpringApplication:842] Application run failed
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'mongo' defined in class path resource [org/springframework/boot/autoconfigure/mongo/MongoAutoConfiguration.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [com.mongodb.MongoClient]: Factory method 'mongo' threw exception; nested exception is java.lang.IllegalArgumentException: clusterListener can not be null
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:590) ~[spring-beans-5.0.7.RELEASE.jar:5.0.7.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1256) ~[spring-beans-5.0.7.RELEASE.jar:5.0.7.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1105) ~[spring-beans-5.0.7.RELEASE.jar:5.0.7.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:543) ~[spring-beans-5.0.7.RELEASE.jar:5.0.7.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:503) ~[spring-beans-5.0.7.RELEASE.jar:5.0.7.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:317) ~[spring-beans-5.0.7.RELEASE.jar:5.0.7.RELEASE]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222) ~[spring-beans-5.0.7.RELEASE.jar:5.0.7.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:315) ~[spring-beans-5.0.7.RELEASE.jar:5.0.7.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199) ~[spring-beans-5.0.7.RELEASE.jar:5.0.7.RELEASE]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:760) ~[spring-beans-5.0.7.RELEASE.jar:5.0.7.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:869) ~[spring-context-5.0.7.RELEASE.jar:5.0.7.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:550) ~[spring-context-5.0.7.RELEASE.jar:5.0.7.RELEASE]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:140) ~[spring-boot-2.0.3.RELEASE.jar:2.0.3.RELEASE]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:759) [spring-boot-2.0.3.RELEASE.jar:2.0.3.RELEASE]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:395) [spring-boot-2.0.3.RELEASE.jar:2.0.3.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:327) [spring-boot-2.0.3.RELEASE.jar:2.0.3.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1255) [spring-boot-2.0.3.RELEASE.jar:2.0.3.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1243) [spring-boot-2.0.3.RELEASE.jar:2.0.3.RELEASE]
+	at com.example.spring06.Spring06Application.main(Spring06Application.java:21) [classes/:?]
+Caused by: org.springframework.beans.BeanInstantiationException: Failed to instantiate [com.mongodb.MongoClient]: Factory method 'mongo' threw exception; nested exception is java.lang.IllegalArgumentException: clusterListener can not be null
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:185) ~[spring-beans-5.0.7.RELEASE.jar:5.0.7.RELEASE]
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:582) ~[spring-beans-5.0.7.RELEASE.jar:5.0.7.RELEASE]
+	... 18 more
+Caused by: java.lang.IllegalArgumentException: clusterListener can not be null
+	at com.mongodb.assertions.Assertions.notNull(Assertions.java:37) ~[mongodb-driver-core-3.6.4.jar:?]
+	at com.mongodb.connection.ClusterSettings$Builder.addClusterListener(ClusterSettings.java:218) ~[mongodb-driver-core-3.6.4.jar:?]
+	at com.mongodb.connection.DefaultClusterFactory.getClusterSettings(DefaultClusterFactory.java:190) ~[mongodb-driver-core-3.6.4.jar:?]
+	at com.mongodb.connection.DefaultClusterFactory.create(DefaultClusterFactory.java:80) ~[mongodb-driver-core-3.6.4.jar:?]
+	at com.mongodb.Mongo.createCluster(Mongo.java:682) ~[mongodb-driver-3.2.2.jar:?]
+	at com.mongodb.Mongo.createCluster(Mongo.java:668) ~[mongodb-driver-3.2.2.jar:?]
+	at com.mongodb.Mongo.createCluster(Mongo.java:642) ~[mongodb-driver-3.2.2.jar:?]
+	at com.mongodb.Mongo.<init>(Mongo.java:289) ~[mongodb-driver-3.2.2.jar:?]
+	at com.mongodb.MongoClient.<init>(MongoClient.java:268) ~[mongodb-driver-3.2.2.jar:?]
+	at org.springframework.boot.autoconfigure.mongo.MongoClientFactory.createMongoClient(MongoClientFactory.java:111) ~[spring-boot-autoconfigure-2.0.3.RELEASE.jar:2.0.3.RELEASE]
+	at org.springframework.boot.autoconfigure.mongo.MongoClientFactory.createNetworkMongoClient(MongoClientFactory.java:107) ~[spring-boot-autoconfigure-2.0.3.RELEASE.jar:2.0.3.RELEASE]
+	at org.springframework.boot.autoconfigure.mongo.MongoClientFactory.createMongoClient(MongoClientFactory.java:67) ~[spring-boot-autoconfigure-2.0.3.RELEASE.jar:2.0.3.RELEASE]
+	at org.springframework.boot.autoconfigure.mongo.MongoAutoConfiguration.mongo(MongoAutoConfiguration.java:70) ~[spring-boot-autoconfigure-2.0.3.RELEASE.jar:2.0.3.RELEASE]
+	at org.springframework.boot.autoconfigure.mongo.MongoAutoConfiguration$$EnhancerBySpringCGLIB$$30bcd15c.CGLIB$mongo$0(<generated>) ~[spring-boot-autoconfigure-2.0.3.RELEASE.jar:2.0.3.RELEASE]
+	at org.springframework.boot.autoconfigure.mongo.MongoAutoConfiguration$$EnhancerBySpringCGLIB$$30bcd15c$$FastClassBySpringCGLIB$$82f407b9.invoke(<generated>) ~[spring-boot-autoconfigure-2.0.3.RELEASE.jar:2.0.3.RELEASE]
+	at org.springframework.cglib.proxy.MethodProxy.invokeSuper(MethodProxy.java:228) ~[spring-core-5.0.7.RELEASE.jar:5.0.7.RELEASE]
+	at org.springframework.context.annotation.ConfigurationClassEnhancer$BeanMethodInterceptor.intercept(ConfigurationClassEnhancer.java:361) ~[spring-context-5.0.7.RELEASE.jar:5.0.7.RELEASE]
+	at org.springframework.boot.autoconfigure.mongo.MongoAutoConfiguration$$EnhancerBySpringCGLIB$$30bcd15c.mongo(<generated>) ~[spring-boot-autoconfigure-2.0.3.RELEASE.jar:2.0.3.RELEASE]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.8.0_181]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[?:1.8.0_181]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:1.8.0_181]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[?:1.8.0_181]
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:154) ~[spring-beans-5.0.7.RELEASE.jar:5.0.7.RELEASE]
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:582) ~[spring-beans-5.0.7.RELEASE.jar:5.0.7.RELEASE]
+	... 18 more
